@@ -52,7 +52,6 @@ body{
     align-items: center;
     justify-content: space-around;
     background: rgba(18, 82, 219, 0.8);
-    /* background: rgba(0,0,0,.8); */
     position: absolute;
 }
 
