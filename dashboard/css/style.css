@@ -1,10 +1,14 @@
+body{
+    overflow: hidden;
+}
+
 .navbar{
     z-index: 1000;
 }
 
 .main{
     width:100%;
-    height:100vh;
+    height:auto;
     padding:0px;
     position: relative;
     display: flex;
@@ -37,10 +41,51 @@
     box-shadow: 0px 0px 3px #ccc;
     padding:12px;
     background: #fff;
+    overflow-y: scroll;
 }
+
+.main-area .cards-cont{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+.main-area .cards-cont .box{
+    box-shadow: 0px 0px 3px #ccc;
+    padding:12px;
+    margin:10px;
+    border-radius: 10px;
+    width:260px;
+}
+.main-area .cards-cont .box .stat{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+}
+.main-area .cards-cont .box .stat .icon{
+    font-size: 35px;
+    padding-right:5px;
+}
+.main-area .cards-cont .box.acep{
+    background-image: linear-gradient(to bottom left, blue, cyan);
+}
+.main-area .cards-cont .box.rej{
+    background-image: linear-gradient(to bottom left, #ff0000, #df3c3c5b);
+}
+
+.main-area .cards-cont .box .stat .counts{
+    font-size: 35px;
+    font-weight: 700;
+}
+
 
 .main-area .ongoing-trip{
     position: relative;
+}
+.main-area .ongoing-trip .boxes{
+    display:flex;
+    flex-wrap: wrap;
 }
 .main-area .ongoing-card{
     width:150px;
@@ -48,6 +93,7 @@
     border-radius: 5px;
     box-shadow: 0px 0px 3px #ccc;
     text-align: center;
+    margin:5px;
 }
 .main-area .ongoing-card img{
     width:80px;
@@ -90,4 +136,48 @@
 }
 .main-area .ongoing-card .icon.cancel{
     background: #ee0909;
+}
+
+.new-event{
+    position:fixed;
+    top:0px;
+    left:0px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height:100vh;
+    z-index: 2000;
+    display:none;
+}
+.new-event.active{
+    display:flex;
+}
+.new-event .box{
+    width:300px;
+    padding:12px;
+    background:#fff;
+    overflow:hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+.new-event .box .icon{
+    font-size: 55px;
+    color:#000;
+}
+.new-event .box img{
+    width: 50%;
+    border-radius: 50%;
+    margin-top:20px;
+}
+.new-event .box .btn{
+    border-radius: 30px;
+}
+
+.new-event .from,
+.new-event .to{
+    font-weight:500;
+    color:#000;
 }

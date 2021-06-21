@@ -66,6 +66,11 @@
             <br>
             <h4 class="name">Daniel Hustle</h4>
             <small>0804567889</small>
+            <br>
+            <br>
+            <button class="btn btn-primary newevent">
+                New Events
+            </button>
         </div>
 
         <div class="main-area">
@@ -78,6 +83,31 @@
             </div> 
             <hr>
 
+            <div class="cards-cont">
+                <div class="box acep">
+                    <h5>Accepted Trips</h5>
+                    <div class="stat">
+                        <div class="icon acep">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </div>
+                        <div class="counts">
+                            <p>123</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box rej">
+                    <h5>Canceled Trips</h5>
+                    <div class="stat">
+                        <div class="icon acep">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                        <div class="counts">
+                            <p>13</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
             <div class="ongoing-trip">
                 <p>Ongoing Trip</p>
                 <div class="boxes">
@@ -97,8 +127,57 @@
                                 </span>
                         </div>
                     </div>
+                    <div class="ongoing-card">
+                        <div class="img-cont">
+                            <img src="../img/profiles/admin/ben.PNG" alt="">
+                        </div>
+                        <div class="info">
+                            <p>John Doe</p>
+                            <small class="time">5: 50pm</small>
+                        </div>
+                        <div class="action text-center d-flex">
+                                 <span class="icon call"><ion-icon name="call-outline"></ion-icon></span>
+
+                                <span class="icon cancel">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="new-event">
+                <div class="box">
+                    <div class="img-cont">
+                        <img src="../img/profiles/user/ben.PNG" alt="">
+                    </div>
+                    <div class="info mt-2">
+                        <h4>John Doe</h4>
+                        <a href="https://08034209681">08034209681</a>
+                        <br>
+                        <span class="icon">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </span>
+                        <br>
+                        <small>From: </small>
+                        <span class="from">Babcok</span>
+                        <small>To: </small>
+                        <span class="to">Ikeja Lagos</span>
+                        <br>
+                        <br>
+                        <button class="btn btn-success btn-block accept">ACCEPT</button>
+                        <button class="btn btn-danger btn-block rejbtn">REJECT</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
 
     </div>
@@ -107,11 +186,7 @@
 
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
