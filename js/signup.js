@@ -79,19 +79,13 @@ function verifyEmailerror(){
 
 
 
-
-// name: "a2dc9668f2cf170fe3efeb263128b0e7.gif"
-// size: 30952
-// type: "image/gif"
-
-
 function driverRegAlert(){
     Swal.fire({
         title: "Success",
         text: "Account Created Successfully!",
         icon: 'success',
         confirmButtonText:'<a href="">Profile Page</a>'
-      })
+    })
 }
 
 
