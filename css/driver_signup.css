@@ -1,0 +1,46 @@
+.form-container{
+    width:400px;
+    box-shadow: 0px 0px 3px #ccc;
+    padding:10px;
+}
+
+.d-auth-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+    position:relative;
+}
+.d-auth-cont .file{
+    background:#fff;
+    color:transparent;
+    border:none;
+    outline:none;
+    position: relative;
+    height:60px;
+}
+.d-auth-cont .file::-webkit-file-upload-button{
+    visibility: hidden;
+    display: none;
+}
+
+.d-auth-cont .file.dlc-img::before{
+    content:"Driver Licence Image";
+    position:absolute;   
+    padding:10px 20px;
+    background: #1b56d4;
+    color:#fff;
+    border-radius: 30px;
+    font-size:12px;
+    cursor: pointer;
+}
+.d-auth-cont .pre{
+    width:300px;
+    height:150px;
+    background:#ccc;
+    position: relative;
+    left:10px;
+    border-radius: 4px;
+    display: none;
+}

@@ -53,7 +53,6 @@ function validate(){
     log(name)
 }
 
-
 function emptyError(){
     Swal.fire({
         icon: 'error',
@@ -78,23 +77,6 @@ function verifyEmailerror(){
     })
 }
 
-function preview(){
-    fileImg.addEventListener("change", ()=>{
-        imgcont.innerHTML = ""
-        const fileInfo = file.files[0]
-        // log(size)
-        let url = URL.createObjectURL(file.files[0]) //This would be responsible for parsing and constructing a url from the files object into a file or blob
-        icon.src = url;
-        icon.classList.add(".active")
-        imgcont.innerHTML = `
-            <div style="background:url(${url}); background-size:cover;
-            background-position:center; background-repeat:no-repeat;" class="active"></div>
-        `
-    })
-}
-
-preview()
-
 
 
 
@@ -103,8 +85,14 @@ preview()
 // type: "image/gif"
 
 
-
-
+function driverRegAlert(){
+    Swal.fire({
+        title: "Success",
+        text: "Account Created Successfully!",
+        icon: 'success',
+        confirmButtonText:'<a href="">Profile Page</a>'
+      })
+}
 
 
 
