@@ -34,7 +34,14 @@ body{
     border-radius: 50%;
 }
 
-
+.main-sidebar .newevent{
+    position:relative;
+}
+.main-sidebar .newevent .newevent-not{
+    position:absolute;
+    top:-4px;
+    padding:5px;
+}
 .main-area{
     height:100vh;
     width:100%;
