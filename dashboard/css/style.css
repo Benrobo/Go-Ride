@@ -188,3 +188,43 @@ body{
     font-weight:500;
     color:#000;
 }
+
+
+/* edit-profile container */
+.edit-profile{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0, 0, 0, 0.9);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    display:none;
+}
+.edit-profile.hide{
+    display:none;
+}
+.edit-profile.show{
+    display:flex;
+}
+.edit-profile .cont{
+    padding:10px 12px;
+    background:#fff;
+    color:#000;
+    border-radius: 4px;
+    position:relative;
+}
+
+.edit-profile .cont .img-cont-edit img{
+    width:50%;
+    border-radius: 50%;
+}   
+.edit-profile .cont .img-cont-edit .edit-btn{
+    position:absolute;
+    bottom:80px;
+    left:30px;
+    font-size:12px;
+}
