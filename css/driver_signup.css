@@ -42,7 +42,7 @@ body{
 }
 
 .d-auth-cont .file.dlc-img::before{
-    content:"Driver Licence Image";
+    content:"Driver School ID";
     position:absolute;   
     padding:10px 20px;
     background: #1b56d4;
